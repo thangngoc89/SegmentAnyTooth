@@ -38,6 +38,11 @@ uv pip install -r pyproject.toml
 ```bash
 uv pip install -r pyproject.toml --group dev
 ```
+## Weights download
+
+The weight is released under [SegmentAnyTooth Non-Commercial License](./SegmentAnyTooth_license_agreement.pdf).
+
+To obtain the weight, please sign the agreement form and email the signed version to [hi+segmentanytooth@khoanguyen.me](mailto:hi+segmentanytooth@khoanguyen.me). I will email the link for weight download in working days.
 
 ## 🚀 Usage Example
 
@@ -56,13 +61,13 @@ mask = predict(
 
 # Save the predicted mask
 import cv2
-cv2.imwrite("predicted_mask.jpg", mask * 10)  # Scale mask for visualization if needed
+cv2.imwrite("predicted_mask.jpg", mask * 5)  # Scale mask for visualization if needed
 ```
 
 Notes:
 -	Model weights must be placed in the weights/ directory (or specify another directory).
 -	Views correspond to different photographic angles of intraoral images.
--	Output mask is a NumPy array with pixel values representing FDI tooth numbers.
+-	Output mask is a NumPy array with pixel values representing **FDI** tooth numbers.
 
 ## 📜 License
 
@@ -73,7 +78,7 @@ Commercial use of the weights is prohibited without explicit permission.
 
 Please see:
 -	[LICENSE](./LICENSE) for full terms of the MIT License.
--	[WEIGHTS_LICENSE.txt](./WEIGHTS_LICENSE.txt) for the model weights licensing terms.
+-	[WEIGHT_LICENSE](./SegmentAnyTooth_license_agreement.pdf) for the model weights licensing terms.
 
 ## 📚 Citation
 
